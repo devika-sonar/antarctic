@@ -41,10 +41,10 @@ const INITIAL_ALERTS = [
 
 export default function AlertsView() {
   const [alerts, setAlerts] = useState(INITIAL_ALERTS);
-  const [filterSeverity, setFilterSeverity] = useState('all');
-  const [filterStatus, setFilterStatus] = useState('all');
+  const [filterSeverity] = useState('all');
+  const [filterStatus] = useState('all');
   const [selectedAlert, setSelectedAlert] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery] = useState('');
   const [toastMsg, setToastMsg] = useState('');
 
   const showToast = (msg) => {

@@ -17,7 +17,7 @@ proj4.defs(
 register(proj4);
 const antarcticProjection = getProjection('EPSG:3031');
 
-export default function PolarMap({ activeService }) {
+export default function PolarMap() {
   const mapElement = useRef(null);
   const mapRef = useRef(null);
 
